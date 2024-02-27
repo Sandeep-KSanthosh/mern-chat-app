@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import useLogin from "../../hooks/useLogin";
+import { BsChatQuote } from "react-icons/bs";
 
 const Login = () => {
 	const [username, setUsername] = useState("");
@@ -17,7 +18,10 @@ const Login = () => {
 		<div className='flex flex-col items-center justify-center min-w-96 mx-auto'>
 			<div className='w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0'>
 			<h1 className='text-4xl font-bold text-center mb-5 text-blue-900' style={{ fontFamily: 'cursive' }}>
-					ChatterUp
+					<span className="inline-block align-middle">
+						<BsChatQuote className='w-10 h-10 inline-block' style={{color:'indigo'}} />
+					</span>
+					<span className="inline-block align-middle ml-2">ChatterUp</span>
 					{/* <span className='text-blue-500'> ChatApp</span> */}
 				</h1>
 

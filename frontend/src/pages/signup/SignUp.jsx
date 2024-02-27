@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import GenderCheckbox from "./GenderCheckbox";
 import { useState } from "react";
 import useSignup from "../../hooks/useSignup";
+import { BsChatQuote } from "react-icons/bs";
 
 const SignUp = () => {
 	const [inputs, setInputs] = useState({
@@ -26,8 +27,11 @@ const SignUp = () => {
 	return (
 		<div className='flex flex-col items-center justify-center min-w-96 mx-auto'>
 			<div className='w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0'>
-			<h1 className='text-4xl font-bold text-center mb-5 text-blue-900' style={{ fontFamily: 'cursive' }}>
-					ChatterUp
+		    <h1 className='text-4xl font-bold text-center mb-5 text-blue-900' style={{ fontFamily: 'cursive' }}>
+					<span className="inline-block align-middle">
+						<BsChatQuote className='w-10 h-10 inline-block' style={{color:'indigo'}} />
+					</span>
+					<span className="inline-block align-middle ml-2">ChatterUp</span>
 					{/* <span className='text-blue-500'> ChatApp</span> */}
 				</h1>
 
