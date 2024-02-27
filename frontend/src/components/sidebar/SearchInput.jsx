@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { IoSearchSharp } from "react-icons/io5";
+import { FaSearchengin } from "react-icons/fa6";
 import useConversation from "../../zustand/useConversation";
 import useGetConversations from "../../hooks/useGetConversations";
 import toast from "react-hot-toast";
@@ -28,12 +28,12 @@ const SearchInput = () => {
 			<input
 				type='text'
 				placeholder='Search…'
-				className='input input-bordered rounded-full'
+				className='input input-bordered rounded-full bg-gray-700'
 				value={search}
 				onChange={(e) => setSearch(e.target.value)}
 			/>
-			<button type='submit' className='btn btn-circle bg-sky-500 text-white'>
-				<IoSearchSharp className='w-6 h-6 outline-none' />
+			<button type='submit' className='btn btn-circle bg-black text-white'>
+			< FaSearchengin className='w-6 h-6 outline-none' />
 			</button>
 		</form>
 	);
